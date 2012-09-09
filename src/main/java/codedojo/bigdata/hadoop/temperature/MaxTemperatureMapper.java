@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.temperature;// cc MaxTemperatureMapper Mapper for maximum temperature example
+package codedojo.bigdata.hadoop.temperature;// cc MaxTemperatureMapper Mapper for maximum temperature example
 // vv MaxTemperatureMapper
 
 import java.io.IOException;

@@ -1,7 +1,4 @@
-package codedojo.bigdata.syslogger;
-
-import java.io.IOException;
-import java.util.Iterator;
+package codedojo.bigdata.hadoop.meters;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -10,17 +7,20 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 
-public class SysLogReducer extends MapReduceBase
+import java.io.IOException;
+import java.util.Iterator;
+
+public class MeterReducer extends MapReduceBase
   implements Reducer<Text, IntWritable, Text, IntWritable> {
 
   public void reduce(Text key, Iterator<IntWritable> values,
       OutputCollector<Text, IntWritable> output, Reporter reporter)
       throws IOException {
     
-    int sum = 0;
+    int maxValue = Integer.MIN_VALUE;
     while (values.hasNext()) {
-      sum += values.next().get();
+      maxValue = Math.max(maxValue, values.next().get());
     }
-    output.collect(key, new IntWritable(sum));
+    output.collect(key, new IntWritable(maxValue));
   }
 }

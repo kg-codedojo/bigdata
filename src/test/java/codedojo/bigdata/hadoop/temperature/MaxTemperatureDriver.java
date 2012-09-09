@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.temperature;
+package codedojo.bigdata.hadoop.temperature;
 
 import java.io.File;
 

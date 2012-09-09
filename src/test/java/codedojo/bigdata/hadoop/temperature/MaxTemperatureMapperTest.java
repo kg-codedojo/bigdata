@@ -1,8 +1,7 @@
-package codedojo.bigdata.examples.temperature;
+package codedojo.bigdata.hadoop.temperature;
 
 import java.io.IOException;
 
-import codedojo.bigdata.examples.temperature.MaxTemperatureMapper;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;

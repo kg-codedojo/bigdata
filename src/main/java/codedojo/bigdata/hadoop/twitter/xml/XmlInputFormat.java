@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.twitter.xml;
+package codedojo.bigdata.hadoop.twitter.xml;
 
 
 

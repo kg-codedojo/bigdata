@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.temperature;// cc MaxTemperature Application to find the maximum temperature in the weather dataset
+package codedojo.bigdata.hadoop.temperature;// cc MaxTemperature Application to find the maximum temperature in the weather dataset
 // vv MaxTemperature
 import java.io.IOException;
 

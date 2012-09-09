@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.temperature;// cc MaxTemperatureReducer Reducer for maximum temperature example
+package codedojo.bigdata.hadoop.temperature;// cc MaxTemperatureReducer Reducer for maximum temperature example
 // cc MaxTemperatureReducer2 Reducer for maximum temperature example
 // vv MaxTemperatureReducer
 import java.io.IOException;
@@ -26,5 +26,3 @@ public class MaxTemperatureReducer extends MapReduceBase
     output.collect(key, new IntWritable(maxValue));
   }
 }
-// ^^ MaxTemperatureReducer2
-// ^^ MaxTemperatureReducer

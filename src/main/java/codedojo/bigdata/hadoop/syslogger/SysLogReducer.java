@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.twitter;
+package codedojo.bigdata.hadoop.syslogger;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -10,18 +10,17 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 
-
-public class TwitterTimelineReducer extends MapReduceBase
+public class SysLogReducer extends MapReduceBase
   implements Reducer<Text, IntWritable, Text, IntWritable> {
 
   public void reduce(Text key, Iterator<IntWritable> values,
       OutputCollector<Text, IntWritable> output, Reporter reporter)
       throws IOException {
     
-    int value = 0;
+    int sum = 0;
     while (values.hasNext()) {
-    	value += values.next().get();
+      sum += values.next().get();
     }
-    output.collect(key, new IntWritable(value));
+    output.collect(key, new IntWritable(sum));
   }
 }

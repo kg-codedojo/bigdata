@@ -1,9 +1,7 @@
-package codedojo.bigdata.examples.twitter;
+package codedojo.bigdata.hadoop.twitter;
 
 import java.io.IOException;
 
-import codedojo.bigdata.examples.twitter.TwitterTimeline;
-import codedojo.bigdata.examples.twitter.TwitterTimelineMapper;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.JobConf;

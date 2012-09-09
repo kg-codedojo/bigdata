@@ -1,4 +1,4 @@
-package codedojo.bigdata.syslogger;
+package codedojo.bigdata.hadoop.syslogger;
 
 import java.io.IOException;
 import java.util.Arrays;

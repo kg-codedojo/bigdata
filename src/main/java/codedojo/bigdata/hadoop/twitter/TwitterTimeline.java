@@ -1,4 +1,4 @@
-package codedojo.bigdata.examples.twitter;
+package codedojo.bigdata.hadoop.twitter;
 
 import java.io.File;
 import java.io.IOException;

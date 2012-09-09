@@ -1,9 +1,8 @@
-package codedojo.bigdata.examples.temperature;
+package codedojo.bigdata.hadoop.temperature;
 
 import java.io.IOException;
 import java.util.Arrays;
 
-import codedojo.bigdata.examples.temperature.MaxTemperatureReducer;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mrunit.ReduceDriver;
